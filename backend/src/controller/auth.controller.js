@@ -16,11 +16,9 @@ async function sendTokenResponse(user, res, message) {
     );
 
     res.cookie("token", token, {
-        httpOnly: false,
-        secure: false, 
-        partitioned: true,      // development
-        sameSite: "lax",
-        path: "/",
+        httpOnly: true,
+        secure: true,       // development
+        sameSite: "none",
         maxAge: 7 * 24 * 60 * 60 * 1000
     });
     res.status(201).json({
