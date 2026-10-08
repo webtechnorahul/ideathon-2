@@ -29,14 +29,14 @@ export const routes = createBrowserRouter([
                 path: "/roadmaps",
                 element: <Protected><Roadmap /></Protected>
             },
-            {
-                path: "/register",
-                element: <Register />
-            },
-            {
-                path: "/login",
-                element: <Login />
-            }
         ]
+    },
+    {
+        path: "/register",
+        element: <Register />
+    },
+    {
+        path: "/login",
+        element: <Login />
     }
 ])
