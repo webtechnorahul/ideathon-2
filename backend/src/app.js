@@ -17,7 +17,7 @@ app.use(
   cors({
     origin: "https://ideathon-2-three.vercel.app",
     credentials: true,
-    secure: false
+    secure: true
   })
 );
 app.use(express.json());
