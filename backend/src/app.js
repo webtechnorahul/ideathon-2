@@ -15,7 +15,7 @@ const app = express();
 app.use(morgan('dev'));
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://ideathon-2-three.vercel.app/",
     credentials: true,
     secure: false
   })
