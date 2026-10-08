@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const aiApiInstance = axios.create({
-    baseURL: "http://localhost:3000/api/ai",
+    baseURL: "https://ideathon-2.onrender.com/api/ai",
     withCredentials: true,
 });
 
