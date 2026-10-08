@@ -39,6 +39,7 @@ passport.use(new GoogleStrategy({
 app.use(passport.initialize());
 
 // Routes Middleware
+app.set('trust proxy', 1);
 app.use('/api/auth', authRouter);
 app.use('/api/ai', routerAi);
 
