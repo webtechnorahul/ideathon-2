@@ -19,7 +19,8 @@ async function sendTokenResponse(user, res, message) {
         httpOnly: false,
         secure: false, 
         partitioned: true,      // development
-        sameSite: "none",
+        sameSite: "lax",
+        path: "/",
         maxAge: 7 * 24 * 60 * 60 * 1000
     });
     res.status(201).json({
